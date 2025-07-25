@@ -1,5 +1,5 @@
-export function Guitar({ guitar, addToCart }) {
-  const { name, price, description, image } = guitar;
+export function Cloth({ cloth, addToCart }) {
+  const { name, price, description, image } = cloth;
 
   return (
     <div className="product-card fade-in">
@@ -15,7 +15,7 @@ export function Guitar({ guitar, addToCart }) {
         <div className="product-actions">
           <button 
             className="btn btn-primary w-full"
-            onClick={() => addToCart(guitar)}
+            onClick={() => addToCart(cloth)}
             aria-label={`Agregar ${name} al carrito`}
           >
             Agregar al Carrito

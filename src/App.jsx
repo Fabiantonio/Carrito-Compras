@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Header } from "./Components/Header.jsx";
-import { Guitar } from "./Components/Guitar.jsx";
+import { Cloth } from "./Components/Cloth.jsx";
 import { db } from "./utils/db.js";
 import "./App.css";
 
@@ -83,9 +83,9 @@ function App() {
             <h2 className="section-title">Nuestra Colección</h2>
             <div className="grid grid-products product-grid">
               {data.map((product) => (
-                <Guitar
+                <Cloth
                   key={product.id}
-                  guitar={product}
+                  cloth={product}
                   addToCart={addToCart}
                 />
               ))}

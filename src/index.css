@@ -134,10 +134,11 @@ p {
   max-width: 90vw;
   z-index: 1000;
   padding: 24px;
-  margin-top: 8px;
+  margin-top: 0;
 }
 
-.carrito:hover .carrito-dropdown {
+.carrito:hover .carrito-dropdown,
+.carrito-dropdown:hover {
   display: block;
 }
 
